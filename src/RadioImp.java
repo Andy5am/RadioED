@@ -7,7 +7,11 @@ public class RadioImp implements Radio {
     private double[] buttonFM = new double[12];
 
 
-
+    public RadioImp(){
+        this.state = false;
+        this.frecuency = true;
+        this.station = 87.9;
+    }
     public void toggle(){
         this.state = !this.state;
     }
@@ -16,6 +20,11 @@ public class RadioImp implements Radio {
     }
     public void changeFrecuency(){
         this.frecuency = !this.frecuency;
+        if (this.frecuency) {
+            this.station = 87.9;
+        } else {
+            this.station = 530;
+        }
     }
     public void changeStation(boolean up){
         if (this.frecuency){
@@ -83,8 +92,8 @@ public class RadioImp implements Radio {
 
         if (this.state){
             str = "\tEncendido\n";
-            str += "Estacion: "+this.station;
-            str += "Frecuencia: "+strFre;
+            str += "Estacion: "+this.station+"\n";
+            str += "Frecuencia: "+strFre+"\n";
         }else {
             str = "\t Apagado\n";
         }
