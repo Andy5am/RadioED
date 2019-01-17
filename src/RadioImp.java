@@ -94,19 +94,8 @@ public class RadioImp implements Radio {
             str = "\tEncendido\n";
             str += "Estacion: "+this.station+"\n";
             str += "Frecuencia: "+strFre+"\n";
-            str += "Boton 1\n";
-            str += "Boton 2\n";
-            str += "Boton 3\n";
-            str += "Boton 4\n";
-            str += "Boton 5\n";
-            str += "Boton 6\n";
-            str += "Boton 7\n";
-            str += "Boton 8\n";
-            str += "Boton 9\n";
-            str += "Boton 10\n";
-            str += "Boton 11\n";
-            str += "Boton 12\n";
-
+            str += "|1| |2| |3| |4| |5| |6|\n";
+            str += "|7| |8| |9| |10| |11| |12|\n";
 
         }else {
             str = "\t Apagado\n";
